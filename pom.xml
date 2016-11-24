@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.rhkiswani</groupId>
+    <artifactId>javaff.samples</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>JavaFF: Java Facade/Factories Samples</name>
+    <packaging>pom</packaging>
+    <description>
+    </description>
+    <url>https://github.com/rhkiswani/JavaFF</url>
+
+    <scm>
+        <connection>scm:git:https://github.com/rhkiswani/JavaFF-Samples.git</connection>
+        <developerConnection>scm:git:https://github.com/rhkiswani/JavaFF-Samples.git</developerConnection>
+        <url>https://github.com/rhkiswani/JavaFF-Samples</url>
+        <tag>javaff-0.0.10</tag>
+    </scm>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.7</java.version>
+
+        <!-- plugins -->
+        <mvn.plugin.java.compiler.version>3.6.0</mvn.plugin.java.compiler.version>
+    </properties>
+
+    <issueManagement>
+        <url>https://github.com/rhkiswani/JavaFF-Samples/issues</url>
+    </issueManagement>
+
+    <licenses>
+        <license>
+            <name>Licensed under the Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Mohamed Kiswani</name>
+            <email>rhkiswani@gmail.com</email>
+            <organization>rhkiswani</organization>
+            <organizationUrl>https://pl.linkedin.com/in/rhkiswani</organizationUrl>
+        </developer>
+    </developers>
+
+    <dependencies>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${mvn.plugin.java.compiler.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <modules>
+        <module>Exceptions</module>
+        <module>GsonVsJakson</module>
+        <module>Log4jVsLogbackVsJavaUtillogger</module>
+    </modules>
+</project>
