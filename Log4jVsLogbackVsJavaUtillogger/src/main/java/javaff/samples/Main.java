@@ -27,6 +27,7 @@ public class Main {
          *  <dependency>
          *      <groupId>ch.qos.logback</groupId>
          *      <artifactId>logback-classic</artifactId>
+         *
          *      <version>1.1.7</version>
          *  </dependency>
          */
